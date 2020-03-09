@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'roboto_bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'roboto_medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'roboto_regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    background: #2d3136;
+    font-family: 'roboto_medium';
+}
+.main {width: 67%;}
+
+.form_wrap {
+    max-width: 500px;
+    margin: 100px auto;
+}
+.form_header, .activation_alert {
+    color: #fff;
+    font-family: 'roboto_bold';
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.activation_alert {font-size: 35px;}
+
+.control-label {
+    font-size: 18px;
+    color: rgb(215, 215, 215);
+    display: flex;
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+}
+.control-label::after {
+    content: '*';
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #be393b;
+    left: 10px;
+}
+.field {
+    font-family: 'roboto_regular';
+    font-size: 18px;
+    color: #d7d7d7;
+    background: none;
+    border: 1px solid #4c4f53;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.field:focus {
+    border-color: #be393b;
+    background-color: #2f3136;
+}
+
+.send {
+    background: #be393b;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-family: "roboto_bold";
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+}
+.help-block.help-block-error {
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .field-postform-email {margin-bottom: 0;}
+}
+
+@media screen and (max-width: 768px) {
+    .main { width: 90%;}
+    .send { width: 100%;}
+}
